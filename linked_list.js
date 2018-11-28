@@ -10,4 +10,8 @@ function LinkedList() {
 	this.size = function(){
 		return length;
 	}
+
+	this.head = function(){
+		return head;
+	}
 }
