@@ -52,4 +52,8 @@ function LinkedList() {
 		// decrement size of linked list
 		length--;
 	}
+
+	this.isEmpty = function(){
+		return length === 0;
+	}
 }
