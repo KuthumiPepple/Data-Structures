@@ -6,4 +6,8 @@ function LinkedList() {
 		this.element = element;
 		this.next = null;
 	};
+
+	this.size = function(){
+		return length;
+	}
 }
