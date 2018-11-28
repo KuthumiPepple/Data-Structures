@@ -33,4 +33,23 @@ function LinkedList() {
 		// increment size of linked list
 		length++;
 	}
+
+	this.remove = function(element){
+		// create reference to head
+		let currentNode = head;
+		let previousNode;
+		// check if element is head. If yes set head to next node
+		if(currentNode === element){
+			head = currentNode.next;
+		}else{
+			while(currentNode.element !== element){
+				previousNode = currentNode;
+				currentNode = currentNode.next;
+			}
+			// point from previous node to next node
+			previousNode.next = currentNode.next;
+		}
+		// decrement size of linked list
+		length--;
+	}
 }
