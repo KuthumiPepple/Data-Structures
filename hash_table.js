@@ -9,7 +9,7 @@ function HashTable(){
 	};
 
 	let storage = [];
-	// define bucket capacity
+	// define number of buckets
 	const storageLimit = 14;
 	this.print = function(){
 		console.log(storage);
